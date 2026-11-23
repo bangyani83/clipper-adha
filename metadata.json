@@ -1,0 +1,6 @@
+{
+  "name": "Clipper Adha",
+  "description": "AI Video Clipper All-in-One: 1 Video Jadi 20 Konten Viral untuk TikTok, YouTube Shorts, Instagram Reels, dan Facebook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

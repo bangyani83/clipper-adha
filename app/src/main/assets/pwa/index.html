@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Clipper Adha Pro - 1 Video Jadi 20 Konten Viral</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Splash Screen 2 Detik -->
+  <div id="splash-screen" class="splash">
+    <div class="splash-logo-wrap">
+      <img src="./icon-192.png" alt="Logo CA Clipper Adha" class="splash-logo" />
+    </div>
+    <h1 class="splash-title">CLIPPER ADHA</h1>
+    <span class="splash-badge">PRO • AI VIDEO CLIPPER</span>
+    <p class="splash-tagline">1 Video Jadi 20 Konten Viral</p>
+    <p class="splash-sub">Memuat workspace offline lokal...</p>
+  </div>
+
+  <!-- App Shell -->
+  <div id="app-shell" class="app-shell hidden">
+    <header class="top-header">
+      <div class="brand-left">
+        <img src="./icon-192.png" alt="CA" class="header-logo" />
+        <div>
+          <div class="brand-row">
+            <span class="brand-name">Clipper Adha</span>
+            <span class="pro-pill">PRO</span>
+          </div>
+          <div class="brand-status" id="header-data-status">Hemat Data Aktif • Offline Siap</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="chip-pill" id="header-storage">HP Offline</span>
+        <button class="chip-pill gold-pill" id="header-quota-btn" onclick="switchTab('profil')">
+          ⚡ <span id="header-quota-text">1000 mnt/bln</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content"></main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav" id="bottom-nav">
+      <button class="nav-btn active" data-tab="beranda" onclick="switchTab('beranda')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Beranda</span>
+      </button>
+      <button class="nav-btn" data-tab="buat" onclick="switchTab('buat')">
+        <span class="nav-icon">🎬</span>
+        <span class="nav-label">Buat Clip</span>
+      </button>
+      <button class="nav-btn" data-tab="project" onclick="switchTab('project')">
+        <span class="nav-icon">📁</span>
+        <span class="nav-label">Project Saya</span>
+      </button>
+      <button class="nav-btn" data-tab="profil" onclick="switchTab('profil')">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Profil</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Modal / Overlay Root -->
+  <div id="modal-root" class="modal-root hidden"></div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
